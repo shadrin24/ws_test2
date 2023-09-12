@@ -1,16 +1,16 @@
 import React from 'react';
-import {Drawer} from "@mui/material";
+import {Box, Drawer} from "@mui/material";
 import ButtonBar from "./buttons/ButtonBar";
 
 const SidebarComponent = () => {
     return (
-        <Drawer sx={{
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 200,},
-                }}
-                variant="permanent"
-                anchor="right"
+        <Drawer
+            variant="permanent"
+            anchor="right"
         >
-            <ButtonBar></ButtonBar>
+            <Box width='200px'>
+                <ButtonBar></ButtonBar>
+            </Box>
         </Drawer>
     );
 };

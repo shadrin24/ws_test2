@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import './styles/App.css';
 import SidebarComponent from "./components/sidebar/SidebarComponent";
+import Menu from "./components/menu/menu";
 
 function App() {
     // const [posts, setPosts] = useState([
@@ -18,7 +19,8 @@ function App() {
 
     return (
         <div className="App">
-            <SidebarComponent></SidebarComponent>
+            <Menu/>
+            <SidebarComponent/>
         </div>
     );
 }

@@ -6,14 +6,14 @@ import ButtonBuyMarket from "./ButtonBuyMarket";
 import ButtonSellMarket from "./ButtonSellMarket";
 import ButtonBuyTrigger from "./ButtonBuyTrigger";
 import ButtonSellTrigger from "./ButtonSellTrigger";
-import ButtonCancellAll from "./ButtonCancellAll";
+import ButtonCancelAll from "./ButtonCancelAll";
 import ButtonTradeOut from "./ButtonTradeOut";
 import ButtonTradeOutAll from "./ButtonTradeOutAll";
 
 const ButtonBar = () => {
     return (
         <div>
-            <Grid container justifyContent="center" sx={{mt: 4,}}>
+            <Grid container justifyContent="center" alignItems="flex-start" sx={{mt: 4, height: "30vh"}}>
                 <Grid item>
                     <ButtonAutoBuy/>
                 </Grid>
@@ -42,7 +42,7 @@ const ButtonBar = () => {
             </Grid>
             <Grid container justifyContent="center" alignItems="flex-end" sx={{mt: 4,}}>
                 <Grid item>
-                    <ButtonCancellAll/>
+                    <ButtonCancelAll/>
                 </Grid>
                 <Grid item>
                     <ButtonTradeOut/>

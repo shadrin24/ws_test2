@@ -1,7 +1,7 @@
 import React from 'react';
 import ControlButton from "./ControlButton";
 
-const ButtonCancellAll = () => {
+const ButtonCancelAll = () => {
     return (
         <ControlButton
             btn_name={'CANCEL ALL'}
@@ -14,4 +14,4 @@ const ButtonCancellAll = () => {
     );
 };
 
-export default ButtonCancellAll;
+export default ButtonCancelAll;
